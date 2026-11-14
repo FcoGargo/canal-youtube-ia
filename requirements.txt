@@ -1,0 +1,13 @@
+# Voz (en un entorno virtual con Python 3.11)
+chatterbox-tts
+setuptools<81
+sherpa-onnx
+soundfile
+numpy
+scipy
+# Vigilancia de canales de referencia
+yt-dlp
+# Subida a YouTube
+google-api-python-client
+google-auth-oauthlib
+google-auth-httplib2

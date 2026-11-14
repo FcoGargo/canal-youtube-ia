@@ -1,0 +1,41 @@
+<!doctype html><meta charset="utf-8">
+<!-- Banner del canal, 2560x1440. Zona segura central (visible en todo dispositivo): 1546x423, x 507-2053, y 508-931. -->
+<style>
+html,body{margin:0;width:2560px;height:1440px;overflow:hidden;background:#0d1838}
+.bg{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 45%,#2c4f96 0%,#18306a 45%,#0d1838 100%)}
+svg.deco{position:absolute;inset:0}
+.safe{position:absolute;left:507px;top:508px;width:1546px;height:423px}
+.avatar{position:absolute;left:30px;top:6px;width:330px;height:330px;border-radius:50%;overflow:hidden;border:12px solid #fff;box-shadow:0 14px 40px rgba(0,0,0,.5)}
+.avatar img{width:100%;height:100%}
+.live{position:absolute;left:105px;top:322px;background:#e0362c;color:#fff;font:900 34px 'Arial Black',Arial,sans-serif;padding:6px 22px;border-radius:8px;letter-spacing:2px;border:4px solid #fff}
+.titulo{position:absolute;left:420px;top:48px;white-space:nowrap;color:#fff;font:900 88px/1 'Arial Black',Arial,sans-serif;letter-spacing:2px;text-shadow:0 8px 0 #0b1430}
+.titulo b{color:#3fd486}
+.lema{position:absolute;left:426px;top:158px;color:#dbe6ff;font:700 46px Arial,sans-serif;letter-spacing:1px}
+.ticker{position:absolute;left:420px;top:240px;width:1110px;height:84px;display:flex;border:4px solid #fff;border-radius:10px;overflow:hidden}
+.ticker .tag{background:#e0362c;color:#fff;font:900 40px/76px 'Arial Black',Arial,sans-serif;padding:0 26px}
+.ticker .txt{flex:1;background:#fff;color:#14161c;font:700 38px/76px Arial,sans-serif;padding-left:24px;white-space:nowrap}
+.ticker .up{color:#14904d}.ticker .dn{color:#c4232b}
+</style>
+<div class="bg"></div>
+<svg class="deco" width="2560" height="1440" viewBox="0 0 2560 1440">
+  <g stroke="#3a5da3" stroke-width="3" stroke-opacity=".4">
+    <line x1="0" y1="240" x2="2560" y2="240"/><line x1="0" y1="440" x2="2560" y2="440"/><line x1="0" y1="640" x2="2560" y2="640"/><line x1="0" y1="840" x2="2560" y2="840"/><line x1="0" y1="1040" x2="2560" y2="1040"/><line x1="0" y1="1240" x2="2560" y2="1240"/>
+    <line x1="240" y1="0" x2="240" y2="1440"/><line x1="440" y1="0" x2="440" y2="1440"/><line x1="2120" y1="0" x2="2120" y2="1440"/><line x1="2320" y1="0" x2="2320" y2="1440"/>
+  </g>
+  <polyline points="0,1100 180,1020 300,1060 420,900 520,940 640,780" fill="none" stroke="#3fd486" stroke-width="14" stroke-opacity=".5" stroke-linejoin="round"/>
+  <polyline points="1920,760 2040,700 2140,740 2280,560 2400,600 2560,420" fill="none" stroke="#3fd486" stroke-width="14" stroke-opacity=".5" stroke-linejoin="round"/>
+  <g fill="#3fd486" fill-opacity=".4">
+    <rect x="110" y="1180" width="40" height="120"/><rect x="170" y="1140" width="40" height="160"/><rect x="230" y="1200" width="40" height="100"/><rect x="290" y="1100" width="40" height="200"/>
+    <rect x="2230" y="1120" width="40" height="180"/><rect x="2290" y="1060" width="40" height="240"/><rect x="2350" y="1000" width="40" height="300"/><rect x="2410" y="940" width="40" height="360"/>
+  </g>
+  <!-- franjas de noticiero -->
+  <polygon points="0,1330 2560,1290 2560,1350 0,1390" fill="#e0362c" fill-opacity=".85"/>
+  <polygon points="0,1390 2560,1350 2560,1440 0,1440" fill="#0a1128"/>
+</svg>
+<div class="safe">
+  <div class="avatar"><img src="../perfil.png"></div>
+  <div class="live">● NEWS</div>
+  <div class="titulo">MY <b>CHANNEL</b></div>
+  <div class="lema">Your channel tagline here</div>
+  <div class="ticker"><div class="tag">MARKETS</div><div class="txt">TECH <span class="up">▲</span> &nbsp;·&nbsp; CHIPS <span class="up">▲</span> &nbsp;·&nbsp; BANKS <span class="dn">▼</span></div></div>
+</div>

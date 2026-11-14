@@ -1,0 +1,2 @@
+# Un canal de referencia por línea (los pone tu Claude al arrancar). Ejemplo:
+# https://www.youtube.com/@NombreDelCanal

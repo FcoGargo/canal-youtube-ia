@@ -1,0 +1,33 @@
+# --- Secretos: NUNCA se suben ---
+.env
+.env.*
+!.env.example
+client_secret*.json
+token*.json
+*credentials*.json
+*.pem
+*.key
+
+# --- Tu trabajo: videos, audios, referencias, logs ---
+videos/*
+!videos/LEEME.md
+referencia/*
+!referencia/LEEME.md
+vigilancia/datos/
+*.mp4
+*.mov
+*.mkv
+*.webm
+*.wav
+*.mp3
+*.m4a
+*.log
+prueba/
+
+# --- Dependencias y basura ---
+node_modules/
+__pycache__/
+.venv/
+venv/
+.DS_Store
+Thumbs.db
