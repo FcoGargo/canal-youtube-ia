@@ -3,7 +3,7 @@
 Tu Claude puede correr casi todo esto por ti. Necesitas:
 
 1. **Git** y **Python 3.11** (https://www.python.org). Chatterbox no funciona bien con 3.12+.
-2. **Node 18+** (https://nodejs.org).
+2. **Node 20+** (https://nodejs.org).
 3. **ffmpeg** en el PATH (Windows: `winget install Gyan.FFmpeg`; Mac: `brew install ffmpeg`; Linux: `apt install ffmpeg`).
 4. Un navegador **Edge o Chrome** (el render usa Playwright con el navegador instalado).
 

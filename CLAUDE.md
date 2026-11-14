@@ -26,6 +26,7 @@ La persona solo pega el link del repo. **Tú haces todo lo demás**: clonar, ins
 4. **Publicar**: nada sale en YouTube sin su OK escrito, salvo que haya activado la publicación automática en `canal.md` (ver skill `automatizar-canal`).
 
 ## Arranque (en este orden, sin esperar instrucciones)
+0. **Mira dónde corres.** Si es un contenedor temporal en la nube (por ejemplo claude.ai/code, rutas como `/home/user/...` sin escritorio), dilo en la PRIMERA respuesta, antes de instalar nada: "Estoy en la nube y esto se borra al cerrar la sesión. Aquí puedo investigar y escribir guiones, pero para producir, subir a YouTube y automatizar necesitas correrme en tu computadora con la app de escritorio de Claude Code (Code) o la terminal." Recomienda pasar a su PC y pega los comandos de instalación. Si la persona prefiere seguir en la nube, sigue con lo que sí se puede (referencia, temas, guion) y no instales el pipeline de video.
 1. Si no estás dentro del repo, clónalo (`git clone <link>`) y entra en la carpeta.
 2. **Saluda en una línea** y explica en 3 líneas qué vas a montar.
 3. **Pide el video de referencia**: "Súbeme (o arrastra aquí) un video que muestre el tipo de contenido que quieres hacer. Puede ser tuyo o de otro canal; solo lo usaré para estudiar el formato." Guárdalo en `referencia/`.
@@ -53,6 +54,11 @@ Si tu entorno no carga las skills solo, ábrelas y léelas: son archivos `SKILL.
 - Antes de cualquier `git push` corre `git status` y confirma que no aparece `.env`, ningún `*.json` de credenciales, ni videos o audios.
 - Nunca pidas contraseñas. El login de Google lo hace la persona en su navegador.
 - Nada se publica en YouTube sin el OK escrito de la persona en el chat. El script exige `--confirmo-ok` y sube en privado por defecto.
+
+## Su propia copia (no el repo original)
+- El repo original es solo la plantilla: nunca hagas commit ni push ahí, ni lo propongas.
+- Su trabajo (videos, referencias, `.env`, credenciales) ya queda fuera de Git por `.gitignore`, así que no se pierde nada al usar la plantilla.
+- Si quiere guardar su versión (su `canal.md`, guiones, ajustes del presentador), ofrécele crear **su propio repo PRIVADO** con el botón "Use this template" de GitHub, o con `gh repo create <nombre> --private --source . --push` si tiene `gh` y está logueada. Antes del primer push, revisa que en `git status` no haya secretos ni videos.
 
 ## Reglas de trabajo
 - Cero gasto extra por defecto: solo herramientas gratis o locales con licencia comercial. Si algo cuesta, avisa antes.

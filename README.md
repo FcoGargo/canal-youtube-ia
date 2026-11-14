@@ -3,7 +3,7 @@
 Sistema para montar un canal de YouTube de videos animados explicativos hechos con IA, de punta a punta: investigación con fuentes, guion, voz, animación, miniatura, música, subtítulos, shorts, subida a YouTube y vigilancia de canales de referencia. Todo con herramientas gratuitas o locales.
 
 ## Cómo se usa
-1. Abre **Claude Code** en tu computadora (app de escritorio o terminal).
+1. Abre **Claude Code en tu computadora** (la app de escritorio, pestaña Code, o la terminal). En la versión web funciona solo para investigar y escribir: la nube no puede subir a YouTube ni quedarse produciendo.
 2. Pega el link de este repo y escribe: **"Usa este repo para montar mi canal"**.
 3. Tu Claude hace el resto en automático: clona el repo, instala todo, te pide **un video de referencia** y **el link del canal que quieres tomar de modelo**, crea el primer video y deja la producción programada.
 
@@ -28,7 +28,10 @@ Se toman los **temas y el formato** de un canal que funciona (duración, gancho,
 | `canal.md` | Ficha de tu canal (se llena al arrancar) |
 
 ## Requisitos
-Python 3.11, Node 18+, ffmpeg, Git y un navegador Chromium (Edge o Chrome). Ver `guia/01-instalar.md`.
+Python 3.11, Node 20+, ffmpeg, Git y un navegador Chromium (Edge o Chrome). Ver `guia/01-instalar.md`.
+
+## Guardar tu versión
+No hace falta subir nada para usarlo: tus videos y claves se quedan en tu PC. Si quieres tu propia copia en GitHub, usa el botón **Use this template** y créala **privada**.
 
 ## Seguridad
 Tus claves van en `.env` y en `subida/` y nunca se suben: están en `.gitignore`. Copia `.env.example` a `.env` para empezar.

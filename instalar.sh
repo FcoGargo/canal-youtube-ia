@@ -9,7 +9,7 @@ elif command -v apt >/dev/null; then
   I="sudo apt install -y"; PY=python3.11
   command -v $PY >/dev/null || sudo apt install -y python3.11 python3.11-venv
 else
-  echo "Instala a mano: Python 3.11, Node 18+, ffmpeg y git"; exit 1
+  echo "Instala a mano: Python 3.11, Node 20+, ffmpeg y git"; exit 1
 fi
 command -v git >/dev/null || $I git
 command -v node >/dev/null || $I nodejs
