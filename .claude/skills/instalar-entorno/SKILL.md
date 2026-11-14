@@ -5,6 +5,8 @@ description: Revisa e instala lo que necesita el pipeline (Python 3.11, Node, ff
 
 # Instalar el entorno
 
+Camino rápido (lo corres tú, no la persona): `powershell -ExecutionPolicy Bypass -File instalar.ps1` en Windows o `bash instalar.sh` en Mac/Linux. Si algo falla, sigue los pasos de abajo.
+
 1. Comprueba versiones: `git --version`, `python --version` (o `py -3.11 --version`), `node --version`, `ffmpeg -version`.
 2. Instala lo que falte siguiendo `guia/01-instalar.md`. En Windows usa `winget`; en Mac, `brew`. Pide permiso antes de instalar programas.
 3. Crea el entorno virtual con Python 3.11 y `pip install -r requirements.txt`. Si falla `chatterbox-tts` por `pkg_resources`, confirma `setuptools<81`.

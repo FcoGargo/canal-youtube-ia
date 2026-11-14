@@ -18,13 +18,21 @@ Produce videos explicativos de 2 a 3 minutos (y shorts) con:
 - Si la persona pide copiar o resubir contenido ajeno, explícale en una línea que eso viola los derechos de autor y las reglas de YouTube (le pueden borrar el canal) y ofrécele la versión propia.
 - Los hechos se verifican; las acusaciones se presentan como acusaciones.
 
-## Arranque: lo primero que haces (en este orden)
-1. **Saluda en una línea** y explica en 3 líneas qué vas a montar juntos.
-2. **Pide el video de referencia**: "Súbeme (o arrastra aquí) un video que muestre el tipo de contenido que quieres hacer. Puede ser tuyo o de otro canal; solo lo usaré para estudiar el formato." Guárdalo en `referencia/` y estúdialo con `bash vigilancia/estudiar_video.sh referencia/<archivo>` (mira las hojas de fotogramas y transcribe el audio).
-3. **Pide el link del canal de referencia**: "Pégame el link del canal que quieres tomar como modelo (por ejemplo https://www.youtube.com/@canal)." Ponlo en `vigilancia/canales.txt` y corre `python vigilancia/vigilar_canal.py <link>` para ver sus temas destacados.
-4. Con eso, **llena `canal.md`** junto con la persona (tema, nombre, idioma, público, mascota, colores). Propón 3 opciones cuando haga falta; la persona elige.
-5. Revisa el entorno con la skill `instalar-entorno` y guía la instalación de lo que falte.
-6. Sigue la skill `replicar-canal` paso a paso.
+## Modo automático (cómo trabajas)
+La persona solo pega el link del repo. **Tú haces todo lo demás**: clonar, instalar, investigar, escribir, producir, preparar la subida y dejar la producción automatizada. No le pidas que corra comandos que puedes correr tú. Solo te detienes en 4 momentos, porque ahí la necesitas a ella:
+1. Al inicio: el **video de referencia** y el **link del canal de referencia**.
+2. Las **decisiones del canal** (nombre, idioma, mascota): propón 3 opciones con una recomendada; si no contesta, sigue con la recomendada.
+3. Los **logins de Google** (crear el canal, el `client_secret.json` y `--login`): los hace ella en su navegador; tú le das los pasos de uno en uno.
+4. **Publicar**: nada sale en YouTube sin su OK escrito, salvo que haya activado la publicación automática en `canal.md` (ver skill `automatizar-canal`).
+
+## Arranque (en este orden, sin esperar instrucciones)
+1. Si no estás dentro del repo, clónalo (`git clone <link>`) y entra en la carpeta.
+2. **Saluda en una línea** y explica en 3 líneas qué vas a montar.
+3. **Pide el video de referencia**: "Súbeme (o arrastra aquí) un video que muestre el tipo de contenido que quieres hacer. Puede ser tuyo o de otro canal; solo lo usaré para estudiar el formato." Guárdalo en `referencia/`.
+4. **Pide el link del canal de referencia**: "Pégame el link del canal que quieres tomar como modelo (por ejemplo https://www.youtube.com/@canal)." Ponlo en `vigilancia/canales.txt`.
+5. Mientras la persona busca eso, **instala el entorno tú mismo**: `powershell -ExecutionPolicy Bypass -File instalar.ps1` en Windows, o `bash instalar.sh` en Mac/Linux (skill `instalar-entorno`). Avísale que tarda y que vas a instalar programas gratuitos.
+6. Estudia la referencia (skill `vigilar-referencias`), llena `canal.md` y sigue la skill `replicar-canal` hasta tener el primer video listo.
+7. Al terminar el primer video, monta la **automatización** con la skill `automatizar-canal`.
 
 ## Skills de este repo (en `.claude/skills/`)
 - `replicar-canal`: el flujo completo, de la referencia al primer video publicado. Empieza aquí.
@@ -36,6 +44,7 @@ Produce videos explicativos de 2 a 3 minutos (y shorts) con:
 - `producir-video`: voz, animación, música, miniatura y subtítulos.
 - `shorts-desde-largo`: cortar shorts verticales del video largo.
 - `subir-youtube`: publicar con el script de subida.
+- `automatizar-canal`: dejar programada la producción (vigilar, proponer, producir y subir en un horario fijo).
 
 Si tu entorno no carga las skills solo, ábrelas y léelas: son archivos `SKILL.md` normales.
 

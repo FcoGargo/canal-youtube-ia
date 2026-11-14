@@ -16,6 +16,8 @@
 - Paleta de colores: POR DEFINIR
 - Tipo de miniatura: POR DEFINIR
 - Frecuencia de publicación: POR DEFINIR
+- Publicación automática: no (solo cambia a "sí" si la persona lo pide por escrito)
+- Horario de publicación: POR DEFINIR
 - Ideas de los primeros 3 videos: POR DEFINIR
 
 ## Estado

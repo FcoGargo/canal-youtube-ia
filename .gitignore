@@ -23,6 +23,7 @@ vigilancia/datos/
 *.m4a
 *.log
 prueba/
+automatizacion/*.log
 
 # --- Dependencias y basura ---
 node_modules/
